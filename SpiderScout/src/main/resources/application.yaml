@@ -1,0 +1,23 @@
+spring:
+  # 配置文件上传大小限制
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+
+  application:
+    name: spider
+#minio:
+#  server: http://49.234.225.214
+#  port: 9000
+#  accessKey: root2
+#  secretKey: 123456789
+#  bucket: test
+#  urlprefix: /minio/
+oss:
+  access-key: root2
+  bucket-name: test
+  enabled: true
+  name: minio
+  endpoint: http://49.234.225.214:9000
+  secret-key: 123456789
